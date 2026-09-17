@@ -1,0 +1,14 @@
+/.venv
+/.idea
+/.vscode
+/media
+__pycache__/
+
+db.cnf
+db.sqlite3
+
+
+/script
+/collectedstatic
+
+cookies.txt
