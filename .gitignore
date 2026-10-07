@@ -3,6 +3,7 @@
 /.vscode
 /media
 __pycache__/
+migrations/
 
 db.cnf
 db.sqlite3
@@ -12,3 +13,4 @@ db.sqlite3
 /collectedstatic
 
 cookies.txt
+experiment/

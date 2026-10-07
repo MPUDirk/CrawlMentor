@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+    <form method="POST" action="{% url 'auth:logout' %}">
+        {% csrf_token %}
+        <button>log out</button>
+    </form>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <button>submit</button>
+    </form>
+    <span><a href="{% url 'auth:signup' %}">sign up</a> here</span>
+    {{ user.email }}
+</body>
+</html>

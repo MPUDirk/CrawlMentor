@@ -36,6 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'auth',
+    'courses',
 ]
 
 MIDDLEWARE = [
@@ -83,6 +85,12 @@ DATABASES = {
         }
     }
 }
+
+
+AUTH_USER_MODEL = 'FYPAuth.User'
+
+LOGOUT_REDIRECT_URL = 'auth:login'
+LOGIN_URL = 'auth:login'
 
 
 # Password validation
